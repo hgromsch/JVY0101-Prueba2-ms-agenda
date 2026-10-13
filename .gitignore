@@ -1,0 +1,22 @@
+# Compilación
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Sistema operativo
+.DS_Store
+
+# Logs
+*.log
+
+# Entorno local
+.env

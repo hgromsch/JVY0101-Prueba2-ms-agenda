@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: ms-agenda
+  datasource:
+    url: jdbc:postgresql://localhost:5432/agenda_db
+    username: ${DB_USERNAME:respirar}
+    password: ${DB_PASSWORD:respirar}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+# En AWS: reemplazar por Aurora Serverless (endpoint via Secrets Manager) y variables
+# inyectadas por ECS Task Definition. Ver README de este servicio.
