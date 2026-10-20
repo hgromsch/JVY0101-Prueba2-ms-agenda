@@ -19,6 +19,8 @@
 
     <properties>
         <java.version>21</java.version>
+        <!-- ByteBuddy compatible con JDK 22-25: Mockito lo usa para mockear StringRedisTemplate en las pruebas -->
+        <byte-buddy.version>1.17.8</byte-buddy.version>
     </properties>
 
     <dependencies>
